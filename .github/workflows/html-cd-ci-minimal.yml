@@ -110,10 +110,10 @@ jobs:
       - name: Déploiement Production SFTP Sovereign
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.SFTP_SERVER }}ssh-ruzanna.alwaysdata.net
-          username: ${{ secrets.SFTP_USERNAME }}ruzanna
+          server: ${{ secrets.SFTP_SERVER }}
+          username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
           port: 22
           local_path: './'
-          remote_path: ${{ secrets.REMOTE_PATH }}/home/ruzanna/www/
+          remote_path: ${{ secrets.REMOTE_PATH }}
           ssh_private_key: ''
