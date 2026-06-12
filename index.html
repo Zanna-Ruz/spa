@@ -5,7 +5,303 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruzanna - Portfolio Concepteur Designer UI & Communication Visuelle</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 0 0 30px 30px;
+            margin-bottom: 40px;
+        }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; font-weight: 700; }
+        header .subtitle { font-size: 1.2em; opacity: 0.95; font-weight: 300; }
+        header .contact-info { margin-top: 25px; font-size: 0.95em; }
+        header .contact-info a { color: white; text-decoration: none; margin: 0 15px; border-bottom: 1px solid rgba(255,255,255,0.3); transition: border-bottom 0.3s; }
+        header .contact-info a:hover { border-bottom: 1px solid white; }
+        section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .about p { font-size: 1.1em; color: #555; }
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #333;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .skill-item {
+            background: #f0f4ff;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .skill-item h4 { color: #667eea; margin-bottom: 5px; }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .project-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #e9ecef;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .project-card h3 { color: #764ba2; margin-bottom: 10px; }
+        .project-card .tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+        .cta {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        .cta h2 { color: white; border-bottom: 3px solid white; margin-bottom: 20px; }
+        .cta a {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta a:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .ux-journey {
+            background: #fff5f5;
+            border-left: 5px solid #fc8181;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        .new-skill {
+            background: #f0fff4;
+            border-left: 5px solid #48bb78;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8em; }
+            section { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ruzanna</h1>
+    <p class="subtitle">Concepteur Designer UI & UX | Communication Visuelle</p>
+    <div class="contact-info">
+
+
+    </div>
+</header>
+
+<div class="container">
+
+    <section class="about">
+        <h2>À propos</h2>
+        <p>
+            Actuellement en formation <span class="highlight">Concepteur Designer UI</span> (Bac+3), après un Bac+2 en Développement Web.
+            Mon parcours atypique m'a dotée d'une sensibilité unique à <span class="highlight">l'expérience utilisateur</span> : mon background
+            d'infirmière m'a appris à <strong>écouter, analyser et comprendre les besoins réels des gens</strong>.
+            Aujourd'hui, je mets cette empathie au service du design d'interfaces et de la communication visuelle.
+        </p>
+        <div class="ux-journey">
+            <strong>Ma force :</strong> La logique du développement web + l'empathie des soins + la créativité du design =
+            une approche UX holistique et centrée sur l'humain.
+        </div>
+    </section>
+
+    <section>
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h4>UI / UX Design</h4>
+                <p>Wireframes, maquettes, prototypes interactifs. Approche centrée utilisateur avec recherche et analyse des besoins.</p>
+            </div>
+            <div class="skill-item">
+                <h4>Figma</h4>
+                <p>Maquettage avancé, prototypage, création de design system et composants réutilisables.</p>
+            </div>
+            <div class="skill-item">
+                <h4>Communication Visuelle</h4>
+                <p>Création d'affiches, supports print et digitaux, identité visuelle. J'aime donner vie aux messages visuellement.</p>
+            </div>
+            <div class="skill-item">
+                <h4>Adobe Premiere Pro</h4>
+                <p>Montage vidéo en cours d'approfondissement. Création de contenus vidéo dynamiques pour la communication.</p>
+            </div>
+            <div class="skill-item">
+                <h4>Développement Web</h4>
+                <p>HTML, CSS, bases JavaScript. Je comprends les contraintes techniques et collabore facilement avec les développeurs.</p>
+            </div>
+            <div class="skill-item">
+                <h4>Adobe Photoshop & Illustrator</h4>
+                <p>Débutante mais très motivée, en progression rapide. Création graphique et retouche d'images.</p>
+            </div>
+        </div>
+        <div class="new-skill">
+            <strong>En constante évolution :</strong> Bien que je sois encore en apprentissage sur certains outils, ma motivation et mon envie d'apprendre sont très fortes. Je ne laisse jamais une difficulté technique me bloquer.
+        </div>
+    </section>
+
+    <section>
+        <h2>Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Projet d'étude - Interface Application Santé</h3>
+                <p>Conception UX/UI complète d'une application mobile pour un suivi patient. Recherche utilisateur, wireframes, maquettes Figma et prototypage.</p>
+                <span class="tag">Figma</span>
+                <span class="tag">UX Research</span>
+                <span class="tag">Wireframe</span>
+            </div>
+            <div class="project-card">
+                <h3>Affiche & Communication Visuelle</h3>
+                <p>Création d'affiches et supports de communication pour divers projets d'étude. Travail sur l'impact visuel, la hiérarchie de l'information et l'identité graphique.</p>
+                <span class="tag">Communication</span>
+                <span class="tag">Print</span>
+                <span class="tag">Identité Visuelle</span>
+            </div>
+            <div class="project-card">
+                <h3>Refonte Site Vitrine</h3>
+                <p>Redesign complet d'un site vitrine local : audit UX, nouvelle architecture d'information, maquettes responsive et kit UI.</p>
+                <span class="tag">UI Design</span>
+                <span class="tag">Responsive</span>
+                <span class="tag">Maquette</span>
+            </div>
+            <div class="project-card">
+                <h3>Vidéo & Montage</h3>
+                <p>Projets de montage vidéo en cours d'approfondissement sur Adobe Premiere Pro. Création de contenus dynamiques pour la communication digitale.</p>
+                <span class="tag">Premiere Pro</span>
+                <span class="tag">Montage</span>
+                <span class="tag">Motion</span>
+            </div>
+            <div class="project-card">
+                <h3>Identité Visuelle</h3>
+                <p>Création d'une charte graphique complète : logo, typographie, palette de couleurs et déclinaisons sur supports digitaux et print.</p>
+                <span class="tag">Branding</span>
+                <span class="tag">Logo</span>
+                <span class="tag">Charte Graphique</span>
+            </div>
+            <div class="project-card">
+                <h3>Prototypes Interactifs</h3>
+                <p>Création de prototypes navigables sur Figma pour simuler l'expérience utilisateur et valider les parcours avant développement.</p>
+                <span class="tag">Figma</span>
+                <span class="tag">Prototype</span>
+                <span class="tag">User Flow</span>
+            </div>
+        </div>
+        <p style="margin-top: 20px; color: #666; font-style: italic;">
+            * Les visuels détaillés de ces projets sont disponibles sur demande. Je prépare actuellement une version Behance avec toutes les études de cas.
+        </p>
+    </section>
+
+    <section>
+        <h2>Parcours</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 15px; padding-left: 20px; border-left: 3px solid #667eea;">
+                <strong>2025-2026</strong> - Formation Concepteur Designer UI (Bac+3)<br>
+                <span style="color: #666;">Formation professionnelle en cours - Nancy</span>
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 20px; border-left: 3px solid #764ba2;">
+                <strong>2023-2025</strong> - Bac+2 Développement Web<br>
+                <span style="color: #666;">Bases solides en HTML, CSS, JS et logique de programmation</span>
+            </li>
+            <li style="padding-left: 20px; border-left: 3px solid #fc8181;">
+                <strong>Expérience précédente</strong> - Infirmière<br>
+                <span style="color: #666;">Empathie, analyse des besoins, travail en équipe pluridisciplinaire, gestion du stress</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ce qui me motive</h2>
+        <p>
+            J'adore <strong>créer, penser et analyser</strong>. Le design UI/UX et la communication visuelle sont pour moi le point de rencontre parfait entre la rigueur logique
+            du code et la créativité visuelle. Mon objectif : concevoir des outils numériques et des supports visuels qui <em>comprennent vraiment</em> leurs utilisateurs,
+            en commençant par leurs besoins réels.
+        </p>
+    </section>
+
+    <div class="cta">
+        <h2>Recherche de stage</h2>
+        <p style="font-size: 1.1em; margin-bottom: 10px;">
+            Je recherche un stage en <strong>UI/UX Design, Web Design et Communication Visuelle</strong> du <strong>15 juin au 10 août 2026</strong>.
+        </p>
+        <p>
+            Envie de découvrir mon travail en détail ? Contactez-moi !
+        </p>
+        <a href="mailto:ruzanna.kh.pro@gmail.com">Me contacter</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Ruzanna - Portfolio en cours d'enrichissement</p>
+    <p style="margin-top: 10px; font-size: 0.85em;">Ce portfolio est une version temporaire. Une version complète avec tous les visuels est en préparation.</p>
+</footer>
+
+</body>
+</html>
 
 </body>
 </html>
